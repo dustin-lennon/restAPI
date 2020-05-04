@@ -1,5 +1,4 @@
-import dotenv from 'dotenv-flow';
-dotenv.config();
+import './config.js';
 
 import express from 'express';
 import mongoose from 'mongoose';
@@ -25,4 +24,4 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedT
   console.log('connected to db');
 });
 
-app.listen(8443, () => console.log('Example app listening on port 8443!'))
+app.listen(8443, () => console.log('Example app listening on port 8443!'));
